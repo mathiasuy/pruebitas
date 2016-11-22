@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>El primer script</title>
+ 
+<script type="text/javascript">
+  alert("Hola Mundo!");
+  
+  
+  
+</script>
+<br><br>
+
+<script type="text/javascript">
+var fs = require("fs");
+                fs.readdir(_self.mongoose.rutamodels, FUNCTION(err, files) {
+                    IF (err) {
+                        throw err;
+                    }
+                    files.map(FUNCTION(file) {
+                        RETURN _self.path.join(_self.mongoose.rutamodels, file);
+                    }).filter(FUNCTION(file) {
+                        RETURN fs.statSync(file).isFile();
+                    }).forEach(FUNCTION(file) {
+                        var ext = _self.path.extname(file);
+                        var name_complete = _self.path.basename(file);
+                        var name_simple = name_complete.replace(ext, "");
+                        console.log("---> %s : %s (%s)", name_complete, name_simple, ext);
+                    });
+                });
+</script>
+</head>
+ 
+<body>
+<a href="index.php">VOLVER</a>
+<p>Esta página contiene el primer script</p>
+<center><video src="video/hd.mkv" controls >HTML5 Video</video> </center>
+
+</body>
+</html>
