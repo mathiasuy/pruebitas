@@ -58,7 +58,7 @@
 		fclose($fp);			
 		
 		echo "<br/>Esta página ha sido visitada $contador veces desde $equipos equipos \"distintos\".";
-		echo '<CENTER><br><br><a href="Javascript.html">PRUEBA Javascript</a>   --  <a href="ftp://mathiasuy.ddns.net:21/fing">FTP FING</a>   --  <a href="ftp://mathiasuy.ddns.net:2121/wwww">www</a>   --  <a href="http://mathiasuy.ddns.net:3306">bbdd</a></CENTER>';
+		echo '<CENTER><br><br><a href="Javascript.html">PRUEBA Javascript</a>   --  <a href="fing">FTP FING</a>   --  <a href="fww">www</a>   --  <a href="http://m6">b</a></CENTER>';
 	
 	
 	
