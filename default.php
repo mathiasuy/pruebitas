@@ -35,9 +35,7 @@
 		$contador = $lineas[0];
 		$contador++;
 		
-		
-		echo "holaholaholahoal";
-		
+				
 		$fp = fopen("contador.txt","w+"); 
 		fwrite($fp, $contador); 
 		fclose($fp); 
@@ -57,14 +55,14 @@
 				}
 		fclose($fp);			
 		
-		echo "<br/>Esta página ha sido visitada $contador veces desde $equipos equipos \"distintos\".";
-		echo '<CENTER><br><br><a href="Javascript.html">PRUEBA Javascript</a>   --  <a href="fing">FTP FING</a>   --  <a href="fww">www</a>   --  <a href="http://m6">b</a></CENTER>';
+		echo '<br/>Esta página ha sido visitada <a href="data.txt">'.$contador.'</a> veces desde <a href="iplist.txt">'.$equipos.'</a> equipos "distintos".';
+		echo '<CENTER><br><br><a href="Javascript.html">PRUEBA Javascript</a>   --  <a href="#">FTP FING</a>   --  <a href="#">www</a>  </CENTER>';
 	
 	
 	
-		echo '<CENTER><a href="Musica.php">Listar</a></CENTER>';
+		echo '<CENTER><a href="Musica.php">Listar directorio</a></CENTER>';
 	echo "<br><center>-- Bufón - La octava de octavio --</center>";
-	echo '<center><br><audio src="a0.mp3"  controls ><p>auqui iria el audio</p></audio></center>';		
+	echo '<center><br><audio src="a0.mp3" autoplay  controls ><p>auqui iria el audio</p></audio></center>';		
 		
 		$existe = false;
 		$fp = fopen("iplist.txt", "r");
