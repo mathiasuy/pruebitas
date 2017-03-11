@@ -95,9 +95,11 @@
 	
 	
 	$creditos = $meta['geoplugin_credit'];
-	echo "<br><br>Su navegador y sistema operativo son: ".$navegador;
-	echo "<br><br><br>".$creditos;
+	echo '<br><br><div align="right">Su navegador y sistema operativo son: '.$navegador."</div>";
+	echo '<br><div align="right">'.$creditos."</div>";
 ?>
+<br/>
+<div align="right"><a href="http://mathiasuy.96.lt/..">mathiasuy.96.lt</a></div>
 </body>
 </html>
 
